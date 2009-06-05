@@ -6,27 +6,29 @@ are implemented as a set of Python modules and contain over 300
 classes and over 6,000 functions and methods.
 
 Runtime requirements:
-  cygwin-1.7.0-44
+  cygwin-1.7.0-48
   libdbus1_3-1.2.12-10
   libgcc1-4.3.2-2
-  libQtAssistantClient4-4.4.3-10
-  libQtCore4-4.4.3-10
-  libQtDesigner4-4.4.3-10
-  libQtGui4-4.4.3-10
-  libQtHelp4-4.4.3-10
-  libQtNetwork4-4.4.3-10
-  libQtOpenGL4-4.4.3-10
-  libQtScript4-4.4.3-10
-  libQtSql4-4.4.3-10
-  libQtSvg4-4.4.3-10
-  libQtTest4-4.4.3-10
-  libQtWebKit4-4.4.3-10
-  libQtXml4-4.4.3-10
-  libQtXmlPatterns4-4.4.3-10
+  libphonon4-4.5.1-1
+  libQtAssistantClient4-4.5.1-1
+  libQtCore4-4.5.1-1
+  libQtDesigner4-4.5.1-1
+  libQtGui4-4.5.1-1
+  libQtHelp4-4.5.1-1
+  libQtNetwork4-4.5.1-1
+  libQtOpenGL4-4.5.1-1
+  libQtScript4-4.5.1-1
+  libQtScriptTools4-4.5.1-1
+  libQtSql4-4.5.1-1
+  libQtSvg4-4.5.1-1
+  libQtTest4-4.5.1-1
+  libQtWebKit4-4.5.1-1
+  libQtXml4-4.5.1-1
+  libQtXmlPatterns4-4.5.1-1
   libstdc++6-4.3.2-2
   python-2.5.4-10
   python-dbus-0.83.0-10
-  python-sip-4.7.9-10
+  python-sip-4.8-1
 
 Build requirements:
 (besides corresponding -devel packages)
@@ -35,7 +37,7 @@ Build requirements:
   gcc4-core-4.3.2-2
   gcc4-g++-4.3.2-2
   make-3.81-2
-  pkg-config-0.23a-2
+  pkg-config-0.23b-10
 
 Canonical website:
   http://www.riverbankcomputing.co.uk/software/pyqt/intro
@@ -46,21 +48,22 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack python-pyqt4-4.4.4-X-src.tar.bz2
+  unpack python-pyqt4-4.5-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./python-pyqt4-4.4.4-X.cygport all
+  cygport ./python-pyqt4-4.5-X.cygport all
 
 This will create:
-  /usr/src/python-pyqt4-4.4.4-X-src.tar.bz2
-  /usr/src/python-pyqt4-4.4.4-X.tar.bz2
+  /usr/src/python-pyqt4-4.5-X-src.tar.bz2
+  /usr/src/python-pyqt4-4.5-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary package:
 
   /usr/bin/pylupdate4.exe
+  /usr/bin/pylupdate4.exe.manifest
   /usr/bin/pyrcc4.exe
   /usr/bin/pyuic4
   /usr/lib/python2.5/site-packages/PyQt4/Qt.dll
@@ -72,6 +75,7 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/PyQt4/QtNetwork.dll
   /usr/lib/python2.5/site-packages/PyQt4/QtOpenGL.dll
   /usr/lib/python2.5/site-packages/PyQt4/QtScript.dll
+  /usr/lib/python2.5/site-packages/PyQt4/QtScriptTools.dll
   /usr/lib/python2.5/site-packages/PyQt4/QtSql.dll
   /usr/lib/python2.5/site-packages/PyQt4/QtSvg.dll
   /usr/lib/python2.5/site-packages/PyQt4/QtTest.dll
@@ -81,6 +85,7 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/PyQt4/__init__.py
   /usr/lib/python2.5/site-packages/PyQt4/__init__.pyc
   /usr/lib/python2.5/site-packages/PyQt4/__init__.pyo
+  /usr/lib/python2.5/site-packages/PyQt4/phonon.dll
   /usr/lib/python2.5/site-packages/PyQt4/pyqtconfig.py
   /usr/lib/python2.5/site-packages/PyQt4/pyqtconfig.pyc
   /usr/lib/python2.5/site-packages/PyQt4/pyqtconfig.pyo
@@ -93,6 +98,12 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/PyQt4/uic/Compiler/indenter.py
   /usr/lib/python2.5/site-packages/PyQt4/uic/Compiler/indenter.pyc
   /usr/lib/python2.5/site-packages/PyQt4/uic/Compiler/indenter.pyo
+  /usr/lib/python2.5/site-packages/PyQt4/uic/Compiler/misc.py
+  /usr/lib/python2.5/site-packages/PyQt4/uic/Compiler/misc.pyc
+  /usr/lib/python2.5/site-packages/PyQt4/uic/Compiler/misc.pyo
+  /usr/lib/python2.5/site-packages/PyQt4/uic/Compiler/proxy_type.py
+  /usr/lib/python2.5/site-packages/PyQt4/uic/Compiler/proxy_type.pyc
+  /usr/lib/python2.5/site-packages/PyQt4/uic/Compiler/proxy_type.pyo
   /usr/lib/python2.5/site-packages/PyQt4/uic/Compiler/qobjectcreator.py
   /usr/lib/python2.5/site-packages/PyQt4/uic/Compiler/qobjectcreator.pyc
   /usr/lib/python2.5/site-packages/PyQt4/uic/Compiler/qobjectcreator.pyo
@@ -111,12 +122,48 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/PyQt4/uic/__init__.py
   /usr/lib/python2.5/site-packages/PyQt4/uic/__init__.pyc
   /usr/lib/python2.5/site-packages/PyQt4/uic/__init__.pyo
+  /usr/lib/python2.5/site-packages/PyQt4/uic/driver.py
+  /usr/lib/python2.5/site-packages/PyQt4/uic/driver.pyc
+  /usr/lib/python2.5/site-packages/PyQt4/uic/driver.pyo
   /usr/lib/python2.5/site-packages/PyQt4/uic/exceptions.py
   /usr/lib/python2.5/site-packages/PyQt4/uic/exceptions.pyc
   /usr/lib/python2.5/site-packages/PyQt4/uic/exceptions.pyo
+  /usr/lib/python2.5/site-packages/PyQt4/uic/icon_cache.py
+  /usr/lib/python2.5/site-packages/PyQt4/uic/icon_cache.pyc
+  /usr/lib/python2.5/site-packages/PyQt4/uic/icon_cache.pyo
   /usr/lib/python2.5/site-packages/PyQt4/uic/objcreator.py
   /usr/lib/python2.5/site-packages/PyQt4/uic/objcreator.pyc
   /usr/lib/python2.5/site-packages/PyQt4/uic/objcreator.pyo
+  /usr/lib/python2.5/site-packages/PyQt4/uic/port_v2/__init__.py
+  /usr/lib/python2.5/site-packages/PyQt4/uic/port_v2/__init__.pyc
+  /usr/lib/python2.5/site-packages/PyQt4/uic/port_v2/__init__.pyo
+  /usr/lib/python2.5/site-packages/PyQt4/uic/port_v2/encode_utf8.py
+  /usr/lib/python2.5/site-packages/PyQt4/uic/port_v2/encode_utf8.pyc
+  /usr/lib/python2.5/site-packages/PyQt4/uic/port_v2/encode_utf8.pyo
+  /usr/lib/python2.5/site-packages/PyQt4/uic/port_v2/invoke.py
+  /usr/lib/python2.5/site-packages/PyQt4/uic/port_v2/invoke.pyc
+  /usr/lib/python2.5/site-packages/PyQt4/uic/port_v2/invoke.pyo
+  /usr/lib/python2.5/site-packages/PyQt4/uic/port_v2/load_plugin.py
+  /usr/lib/python2.5/site-packages/PyQt4/uic/port_v2/load_plugin.pyc
+  /usr/lib/python2.5/site-packages/PyQt4/uic/port_v2/load_plugin.pyo
+  /usr/lib/python2.5/site-packages/PyQt4/uic/port_v2/proxy_base.py
+  /usr/lib/python2.5/site-packages/PyQt4/uic/port_v2/proxy_base.pyc
+  /usr/lib/python2.5/site-packages/PyQt4/uic/port_v2/proxy_base.pyo
+  /usr/lib/python2.5/site-packages/PyQt4/uic/port_v2/string_io.py
+  /usr/lib/python2.5/site-packages/PyQt4/uic/port_v2/string_io.pyc
+  /usr/lib/python2.5/site-packages/PyQt4/uic/port_v2/string_io.pyo
+  /usr/lib/python2.5/site-packages/PyQt4/uic/port_v3/__init__.py
+  /usr/lib/python2.5/site-packages/PyQt4/uic/port_v3/__init__.pyc
+  /usr/lib/python2.5/site-packages/PyQt4/uic/port_v3/__init__.pyo
+  /usr/lib/python2.5/site-packages/PyQt4/uic/port_v3/encode_utf8.py
+  /usr/lib/python2.5/site-packages/PyQt4/uic/port_v3/encode_utf8.pyc
+  /usr/lib/python2.5/site-packages/PyQt4/uic/port_v3/encode_utf8.pyo
+  /usr/lib/python2.5/site-packages/PyQt4/uic/port_v3/invoke.py
+  /usr/lib/python2.5/site-packages/PyQt4/uic/port_v3/load_plugin.py
+  /usr/lib/python2.5/site-packages/PyQt4/uic/port_v3/proxy_base.py
+  /usr/lib/python2.5/site-packages/PyQt4/uic/port_v3/string_io.py
+  /usr/lib/python2.5/site-packages/PyQt4/uic/port_v3/string_io.pyc
+  /usr/lib/python2.5/site-packages/PyQt4/uic/port_v3/string_io.pyo
   /usr/lib/python2.5/site-packages/PyQt4/uic/properties.py
   /usr/lib/python2.5/site-packages/PyQt4/uic/properties.pyc
   /usr/lib/python2.5/site-packages/PyQt4/uic/properties.pyo
@@ -126,6 +173,9 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/PyQt4/uic/uiparser.py
   /usr/lib/python2.5/site-packages/PyQt4/uic/uiparser.pyc
   /usr/lib/python2.5/site-packages/PyQt4/uic/uiparser.pyo
+  /usr/lib/python2.5/site-packages/PyQt4/uic/widget-plugins/phonon.py
+  /usr/lib/python2.5/site-packages/PyQt4/uic/widget-plugins/phonon.pyc
+  /usr/lib/python2.5/site-packages/PyQt4/uic/widget-plugins/phonon.pyo
   /usr/lib/python2.5/site-packages/PyQt4/uic/widget-plugins/qaxcontainer.py
   /usr/lib/python2.5/site-packages/PyQt4/uic/widget-plugins/qaxcontainer.pyc
   /usr/lib/python2.5/site-packages/PyQt4/uic/widget-plugins/qaxcontainer.pyo
@@ -140,6 +190,7 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/PyQt4/uic/widget-plugins/qwt.pyo
   /usr/lib/python2.5/site-packages/dbus/mainloop/qt.dll
   /usr/lib/qt4/plugins/designer/cygpythonplugin.dll
+  /usr/lib/qt4/plugins/designer/python/.keep-python-pyqt4
   /usr/share/doc/python-pyqt4/ChangeLog
   /usr/share/doc/python-pyqt4/NEWS
   /usr/share/doc/python-pyqt4/README
@@ -319,6 +370,7 @@ Files included in the binary package:
   /usr/share/sip/PyQt4/QtGui/qimagereader.sip
   /usr/share/sip/PyQt4/QtGui/qimagewriter.sip
   /usr/share/sip/PyQt4/QtGui/qinputcontext.sip
+  /usr/share/sip/PyQt4/QtGui/qinputcontextfactory.sip
   /usr/share/sip/PyQt4/QtGui/qinputdialog.sip
   /usr/share/sip/PyQt4/QtGui/qitemdelegate.sip
   /usr/share/sip/PyQt4/QtGui/qitemeditorfactory.sip
@@ -362,6 +414,7 @@ Files included in the binary package:
   /usr/share/sip/PyQt4/QtGui/qprogressdialog.sip
   /usr/share/sip/PyQt4/QtGui/qproxymodel.sip
   /usr/share/sip/PyQt4/QtGui/qpushbutton.sip
+  /usr/share/sip/PyQt4/QtGui/qpytextobject.sip
   /usr/share/sip/PyQt4/QtGui/qradiobutton.sip
   /usr/share/sip/PyQt4/QtGui/qregion.sip
   /usr/share/sip/PyQt4/QtGui/qrgb.sip
@@ -398,6 +451,7 @@ Files included in the binary package:
   /usr/share/sip/PyQt4/QtGui/qtextcursor.sip
   /usr/share/sip/PyQt4/QtGui/qtextdocument.sip
   /usr/share/sip/PyQt4/QtGui/qtextdocumentfragment.sip
+  /usr/share/sip/PyQt4/QtGui/qtextdocumentwriter.sip
   /usr/share/sip/PyQt4/QtGui/qtextedit.sip
   /usr/share/sip/PyQt4/QtGui/qtextformat.sip
   /usr/share/sip/PyQt4/QtGui/qtextlayout.sip
@@ -434,6 +488,7 @@ Files included in the binary package:
   /usr/share/sip/PyQt4/QtHelp/qhelpsearchquerywidget.sip
   /usr/share/sip/PyQt4/QtHelp/qhelpsearchresultwidget.sip
   /usr/share/sip/PyQt4/QtNetwork/QtNetworkmod.sip
+  /usr/share/sip/PyQt4/QtNetwork/qabstractnetworkcache.sip
   /usr/share/sip/PyQt4/QtNetwork/qabstractsocket.sip
   /usr/share/sip/PyQt4/QtNetwork/qauthenticator.sip
   /usr/share/sip/PyQt4/QtNetwork/qftp.sip
@@ -444,6 +499,7 @@ Files included in the binary package:
   /usr/share/sip/PyQt4/QtNetwork/qlocalsocket.sip
   /usr/share/sip/PyQt4/QtNetwork/qnetworkaccessmanager.sip
   /usr/share/sip/PyQt4/QtNetwork/qnetworkcookie.sip
+  /usr/share/sip/PyQt4/QtNetwork/qnetworkdiskcache.sip
   /usr/share/sip/PyQt4/QtNetwork/qnetworkinterface.sip
   /usr/share/sip/PyQt4/QtNetwork/qnetworkproxy.sip
   /usr/share/sip/PyQt4/QtNetwork/qnetworkreply.sip
@@ -474,6 +530,8 @@ Files included in the binary package:
   /usr/share/sip/PyQt4/QtScript/qscriptstring.sip
   /usr/share/sip/PyQt4/QtScript/qscriptvalue.sip
   /usr/share/sip/PyQt4/QtScript/qscriptvalueiterator.sip
+  /usr/share/sip/PyQt4/QtScriptTools/QtScriptToolsmod.sip
+  /usr/share/sip/PyQt4/QtScriptTools/qscriptenginedebugger.sip
   /usr/share/sip/PyQt4/QtSql/QtSqlmod.sip
   /usr/share/sip/PyQt4/QtSql/qsql.sip
   /usr/share/sip/PyQt4/QtSql/qsqldatabase.sip
@@ -499,11 +557,13 @@ Files included in the binary package:
   /usr/share/sip/PyQt4/QtTest/qtestmouse.sip
   /usr/share/sip/PyQt4/QtTest/qtestsystem.sip
   /usr/share/sip/PyQt4/QtWebKit/QtWebKitmod.sip
+  /usr/share/sip/PyQt4/QtWebKit/qwebdatabase.sip
   /usr/share/sip/PyQt4/QtWebKit/qwebframe.sip
   /usr/share/sip/PyQt4/QtWebKit/qwebhistory.sip
   /usr/share/sip/PyQt4/QtWebKit/qwebhistoryinterface.sip
   /usr/share/sip/PyQt4/QtWebKit/qwebpage.sip
   /usr/share/sip/PyQt4/QtWebKit/qwebpluginfactory.sip
+  /usr/share/sip/PyQt4/QtWebKit/qwebsecurityorigin.sip
   /usr/share/sip/PyQt4/QtWebKit/qwebsettings.sip
   /usr/share/sip/PyQt4/QtWebKit/qwebview.sip
   /usr/share/sip/PyQt4/QtXml/QtXmlmod.sip
@@ -523,10 +583,32 @@ Files included in the binary package:
   /usr/share/sip/PyQt4/QtXmlPatterns/qxmlquery.sip
   /usr/share/sip/PyQt4/QtXmlPatterns/qxmlresultitems.sip
   /usr/share/sip/PyQt4/QtXmlPatterns/qxmlserializer.sip
+  /usr/share/sip/PyQt4/phonon/abstractaudiooutput.sip
+  /usr/share/sip/PyQt4/phonon/abstractvideooutput.sip
+  /usr/share/sip/PyQt4/phonon/audiooutput.sip
+  /usr/share/sip/PyQt4/phonon/backendcapabilities.sip
+  /usr/share/sip/PyQt4/phonon/effect.sip
+  /usr/share/sip/PyQt4/phonon/effectparameter.sip
+  /usr/share/sip/PyQt4/phonon/effectwidget.sip
+  /usr/share/sip/PyQt4/phonon/mediacontroller.sip
+  /usr/share/sip/PyQt4/phonon/medianode.sip
+  /usr/share/sip/PyQt4/phonon/mediaobject.sip
+  /usr/share/sip/PyQt4/phonon/mediasource.sip
+  /usr/share/sip/PyQt4/phonon/objectdescription.sip
+  /usr/share/sip/PyQt4/phonon/path.sip
+  /usr/share/sip/PyQt4/phonon/phononmod.sip
+  /usr/share/sip/PyQt4/phonon/phononnamespace.sip
+  /usr/share/sip/PyQt4/phonon/seekslider.sip
+  /usr/share/sip/PyQt4/phonon/videoplayer.sip
+  /usr/share/sip/PyQt4/phonon/videowidget.sip
+  /usr/share/sip/PyQt4/phonon/volumeslider.sip
 
 ------------------
 
 Port Notes:
+
+----- version 4.5-1 -----
+Version bump for Qt 4.5.
 
 ----- version 4.4.4-10 -----
 Initial release for Cygwin 1.7.
