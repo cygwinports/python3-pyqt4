@@ -4,7 +4,8 @@ DESCRIPTION="Python Qt4 bindings"
 HOMEPAGE="http://www.riverbankcomputing.co.uk/software/pyqt/"
 ORIG_PN="PyQt-x11-gpl"
 SRC_URI="http://www.riverbankcomputing.com/static/Downloads/PyQt4/${ORIG_PN}-${PV}.tar.gz"
-PATCH_URI="4.4.2-phonon.patch"
+PATCH_URI="mirror://portage/dev-python/PyQt4/files/PyQt4-4.5.4-qgraphicslinearlayout-fix.patch
+4.4.2-phonon.patch"
 
 src_compile() {
 	cd ${B}
