@@ -6,36 +6,35 @@ are implemented as a set of Python modules and contain over 300
 classes and over 6,000 functions and methods.
 
 Runtime requirements:
-  cygwin-1.7.0-60
+  cygwin-1.7.1-1
   libdbus1_3-1.2.16-1
-  libgcc1-4.3.2-2
-  libphonon4-4.3.1-2
-  libQtAssistantClient4-4.5.2-1
-  libQtCore4-4.5.2-1
-  libQtDesigner4-4.5.2-1
-  libQtGui4-4.5.2-1
-  libQtHelp4-4.5.2-1
-  libQtNetwork4-4.5.2-1
-  libQtOpenGL4-4.5.2-1
-  libQtScript4-4.5.2-1
-  libQtScriptTools4-4.5.2-1
-  libQtSql4-4.5.2-1
-  libQtSvg4-4.5.2-1
-  libQtTest4-4.5.2-1
-  libQtWebKit4-4.5.2-1
-  libQtXml4-4.5.2-1
-  libQtXmlPatterns4-4.5.2-1
-  libstdc++6-4.3.2-2
+  libgcc1-4.3.4-3
+  libQtAssistantClient4-4.5.3-1
+  libQtCore4-4.5.3-1
+  libQtDesigner4-4.5.3-1
+  libQtGui4-4.5.3-1
+  libQtHelp4-4.5.3-1
+  libQtNetwork4-4.5.3-1
+  libQtOpenGL4-4.5.3-1
+  libQtScript4-4.5.3-1
+  libQtScriptTools4-4.5.3-1
+  libQtSql4-4.5.3-1
+  libQtSvg4-4.5.3-1
+  libQtTest4-4.5.3-1
+  libQtWebKit4-4.5.3-1
+  libQtXml4-4.5.3-1
+  libQtXmlPatterns4-4.5.3-1
+  libstdc++6-4.3.4-3
   python-2.5.4-10
   python-dbus-0.83.0-10
-  python-sip-4.8.2-1
+  python-sip-4.9.3-1
 
 Build requirements:
 (besides corresponding -devel packages)
   binutils-2.19.51-1
-  cygport-0.9.9-1
-  gcc4-core-4.3.2-2
-  gcc4-g++-4.3.2-2
+  cygport-0.9.10-1
+  gcc4-core-4.3.4-3
+  gcc4-g++-4.3.4-3
   make-3.81-2
   pkg-config-0.23b-10
 
@@ -48,19 +47,22 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack python-pyqt4-4.5.4-X-src.tar.bz2
+  unpack python-pyqt4-4.6.2-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./python-pyqt4-4.5.4-X.cygport all
+  cygport ./python-pyqt4-4.6.2-X.cygport all
 
 This will create:
-  /usr/src/python-pyqt4-4.5.4-X-src.tar.bz2
-  /usr/src/python-pyqt4-4.5.4-X.tar.bz2
+  /usr/src/python-pyqt4-4.6.2-X-src.tar.bz2
+  /usr/src/python-pyqt4-4.6.2-X.tar.bz2
 
 -------------------------------------------
 
 Port Notes:
+
+----- version 4.6.2-1 -----
+Version bump.
 
 ----- version 4.5.4-1 -----
 Version bump.
