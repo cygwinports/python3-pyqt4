@@ -5,6 +5,8 @@ HOMEPAGE="http://www.riverbankcomputing.co.uk/software/pyqt/"
 ORIG_PN="PyQt-x11-gpl"
 SRC_URI="http://www.riverbankcomputing.com/static/Downloads/PyQt4/${ORIG_PN}-${PV}.tar.gz"
 
+DIFF_EXCLUDES="opengl_types.sip"
+
 src_compile() {
 	cd ${B}
 
