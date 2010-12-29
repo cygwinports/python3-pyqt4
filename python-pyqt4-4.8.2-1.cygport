@@ -23,9 +23,11 @@ src_compile() {
 
 	${PYTHON} configure.py \
 		-b /usr/bin \
+		-c \
 		-d ${PYTHON_SITELIB} \
 		-p ${QT4_PLUGINSDIR} \
 		-q ${QT4_QMAKE} \
+		--assume-shared \
 		--confirm-license \
 		"CFLAGS+=${CFLAGS}" "CXXFLAGS+=${CXXFLAGS}" \
 		|| error "configure.py failed"
@@ -41,9 +43,11 @@ src_compile() {
 
 	${PYTHON3} configure.py \
 		-b /usr/bin \
+		-c \
 		-d ${PYTHON3_SITELIB} \
 		-p ${QT4_PLUGINSDIR} \
 		-q ${QT4_QMAKE} \
+		--assume-shared \
 		--confirm-license \
 		"CFLAGS+=${CFLAGS}" "CXXFLAGS+=${CXXFLAGS}" \
 		|| error "configure.py failed"
