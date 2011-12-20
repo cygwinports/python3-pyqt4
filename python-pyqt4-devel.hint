@@ -1,8 +1,0 @@
-category: KDE Python
-requires: python python-pyqt4 python-sip-devel
-external-source: python-pyqt4
-sdesc: "Python Qt4 bindings (development)"
-ldesc: "PyQt is a set of Python bindings for Trolltech's Qt application 
-framework and runs on all platforms supported by Qt. The bindings 
-are implemented as a set of Python modules and contain over 300 
-classes and over 6,000 functions and methods."
