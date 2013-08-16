@@ -1,7 +1,7 @@
 inherit python3 qt4
 
 NAME="python3-pyqt4"
-VERSION=4.9.6
+VERSION=4.10.2
 RELEASE=1
 CATEGORY="Python"
 SUMMARY="Python Qt4 bindings"
@@ -27,11 +27,11 @@ src_compile() {
 	cp ${S}/configure.py .
 
 	${PYTHON3} configure.py \
-		-b ${PYTHON3_SITELIB}/PyQt4 \
-		-c \
-		-d ${PYTHON3_SITELIB} \
-		-p ${QT4_PLUGINSDIR} \
-		-q ${QT4_QMAKE} \
+		--bindir ${PYTHON3_SITELIB}/PyQt4 \
+		--concatenate \
+		--destdir ${PYTHON3_SITELIB} \
+		--plugin-destdir ${QT4_PLUGINSDIR} \
+		--qmake ${QT4_QMAKE} \
 		--assume-shared \
 		--confirm-license \
 		--no-designer-plugin \
