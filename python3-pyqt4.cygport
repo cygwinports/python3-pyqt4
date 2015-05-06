@@ -1,7 +1,7 @@
 inherit python3 qt4
 
 NAME="python3-pyqt4"
-VERSION=4.11.2
+VERSION=4.11.3
 RELEASE=1
 CATEGORY="Python"
 SUMMARY="Py3K Qt4 bindings"
@@ -10,10 +10,10 @@ framework and runs on all platforms supported by Qt. The bindings are
 implemented as a set of Python modules and contain over 300 classes and
 over 6,000 functions and methods."
 HOMEPAGE="http://www.riverbankcomputing.co.uk/software/pyqt/"
-ORIG_PN="PyQt-x11-gpl"
-SRC_URI="http://www.riverbankcomputing.com/static/Downloads/PyQt4/${ORIG_PN}-${PV}.tar.gz"
+SRC_URI="http://www.riverbankcomputing.com/static/Downloads/PyQt4/PyQt-x11-gpl-${VERSION}.tar.gz"
+SRC_DIR="PyQt-x11-gpl-${VERSION}"
 PATCH_URI="
-	http://pkgs.fedoraproject.org/cgit/PyQt4.git/plain/PyQt-x11-gpl-4.10-pyuic_shbang.patch
+	http://pkgs.fedoraproject.org/cgit/PyQt4.git/plain/PyQt-x11-gpl-4.10.4-pyuic_shbang.patch
 "
 
 REQUIRES="python3-dbus"
