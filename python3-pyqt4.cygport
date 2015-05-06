@@ -2,7 +2,7 @@ inherit python3 qt4
 
 NAME="python3-pyqt4"
 VERSION=4.11.3
-RELEASE=1
+RELEASE=2
 CATEGORY="Python"
 SUMMARY="Py3K Qt4 bindings"
 DESCRIPTION="PyQt is a set of Python bindings for the Qt application
