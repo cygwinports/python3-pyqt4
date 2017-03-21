@@ -2,7 +2,7 @@ inherit python3 qt4
 
 NAME="python3-pyqt4"
 VERSION=4.11.4
-RELEASE=1
+RELEASE=2
 CATEGORY="Python"
 SUMMARY="Py3K Qt4 bindings"
 DESCRIPTION="PyQt is a set of Python bindings for the Qt application
@@ -48,7 +48,6 @@ src_install() {
 	cyginstall INSTALL_ROOT=${D}
 	# python2.x code
 	rm -fr ${D}${PYTHON3_SITELIB}/PyQt4/uic/port_v2/
-	python3_optimize
 
 #	docinto html
 #	dodoc doc/PyQt.html
